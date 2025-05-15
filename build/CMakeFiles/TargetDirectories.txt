@@ -1,4 +1,6 @@
 /mnt/c/Users/Parijaat Gaur/source/repos/random shi/cmake_trial2/build/CMakeFiles/somename0.dir
-/mnt/c/Users/Parijaat Gaur/source/repos/random shi/cmake_trial2/build/CMakeFiles/somelib.dir
 /mnt/c/Users/Parijaat Gaur/source/repos/random shi/cmake_trial2/build/CMakeFiles/edit_cache.dir
 /mnt/c/Users/Parijaat Gaur/source/repos/random shi/cmake_trial2/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/Parijaat Gaur/source/repos/random shi/cmake_trial2/build/lib/CMakeFiles/somelib.dir
+/mnt/c/Users/Parijaat Gaur/source/repos/random shi/cmake_trial2/build/lib/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Parijaat Gaur/source/repos/random shi/cmake_trial2/build/lib/CMakeFiles/rebuild_cache.dir

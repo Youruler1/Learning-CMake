@@ -155,4 +155,4 @@ CMakeFiles/somename0.dir/bruhtest.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /mnt/c/Users/Parijaat\ Gaur/source/repos/random\ shi/cmake_trial2/bruh.h
+ /mnt/c/Users/Parijaat\ Gaur/source/repos/random\ shi/cmake_trial2/lib/bruh.h

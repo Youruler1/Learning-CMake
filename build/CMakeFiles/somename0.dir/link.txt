@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/somename0.dir/bruhtest.cpp.o -o somename0  libsomelib.a 
+/usr/bin/c++ CMakeFiles/somename0.dir/bruhtest.cpp.o -o somename0  lib/libsomelib.a 

@@ -64,23 +64,38 @@ CMAKE_BINARY_DIR = "/mnt/c/Users/Parijaat Gaur/source/repos/random shi/cmake_tri
 
 # The main recursive "all" target.
 all: CMakeFiles/somename0.dir/all
-all: CMakeFiles/somelib.dir/all
+all: lib/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: lib/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/somename0.dir/clean
-clean: CMakeFiles/somelib.dir/clean
+clean: lib/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory lib
+
+# Recursive "all" directory target.
+lib/all: lib/CMakeFiles/somelib.dir/all
+.PHONY : lib/all
+
+# Recursive "preinstall" directory target.
+lib/preinstall:
+.PHONY : lib/preinstall
+
+# Recursive "clean" directory target.
+lib/clean: lib/CMakeFiles/somelib.dir/clean
+.PHONY : lib/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/somename0.dir
 
 # All Build rule for target.
-CMakeFiles/somename0.dir/all: CMakeFiles/somelib.dir/all
+CMakeFiles/somename0.dir/all: lib/CMakeFiles/somelib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/somename0.dir/build.make CMakeFiles/somename0.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/somename0.dir/build.make CMakeFiles/somename0.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/c/Users/Parijaat Gaur/source/repos/random shi/cmake_trial2/build/CMakeFiles" --progress-num=3,4 "Built target somename0"
@@ -103,30 +118,30 @@ CMakeFiles/somename0.dir/clean:
 .PHONY : CMakeFiles/somename0.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/somelib.dir
+# Target rules for target lib/CMakeFiles/somelib.dir
 
 # All Build rule for target.
-CMakeFiles/somelib.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/somelib.dir/build.make CMakeFiles/somelib.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/somelib.dir/build.make CMakeFiles/somelib.dir/build
+lib/CMakeFiles/somelib.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/somelib.dir/build.make lib/CMakeFiles/somelib.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/somelib.dir/build.make lib/CMakeFiles/somelib.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/c/Users/Parijaat Gaur/source/repos/random shi/cmake_trial2/build/CMakeFiles" --progress-num=1,2 "Built target somelib"
-.PHONY : CMakeFiles/somelib.dir/all
+.PHONY : lib/CMakeFiles/somelib.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/somelib.dir/rule: cmake_check_build_system
+lib/CMakeFiles/somelib.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Parijaat Gaur/source/repos/random shi/cmake_trial2/build/CMakeFiles" 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/somelib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/somelib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Parijaat Gaur/source/repos/random shi/cmake_trial2/build/CMakeFiles" 0
-.PHONY : CMakeFiles/somelib.dir/rule
+.PHONY : lib/CMakeFiles/somelib.dir/rule
 
 # Convenience name for target.
-somelib: CMakeFiles/somelib.dir/rule
+somelib: lib/CMakeFiles/somelib.dir/rule
 .PHONY : somelib
 
 # clean rule for target.
-CMakeFiles/somelib.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/somelib.dir/build.make CMakeFiles/somelib.dir/clean
-.PHONY : CMakeFiles/somelib.dir/clean
+lib/CMakeFiles/somelib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/somelib.dir/build.make lib/CMakeFiles/somelib.dir/clean
+.PHONY : lib/CMakeFiles/somelib.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

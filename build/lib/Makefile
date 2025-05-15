@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Parijaat Gaur/source/repos/random shi/cmake_trial2/build/CMakeFiles" "/mnt/c/Users/Parijaat Gaur/source/repos/random shi/cmake_trial2/build//CMakeFiles/progress.marks"
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd "/mnt/c/Users/Parijaat Gaur/source/repos/random shi/cmake_trial2/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Parijaat Gaur/source/repos/random shi/cmake_trial2/build/CMakeFiles" "/mnt/c/Users/Parijaat Gaur/source/repos/random shi/cmake_trial2/build/lib//CMakeFiles/progress.marks"
+	cd "/mnt/c/Users/Parijaat Gaur/source/repos/random shi/cmake_trial2/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Parijaat Gaur/source/repos/random shi/cmake_trial2/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd "/mnt/c/Users/Parijaat Gaur/source/repos/random shi/cmake_trial2/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,68 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd "/mnt/c/Users/Parijaat Gaur/source/repos/random shi/cmake_trial2/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd "/mnt/c/Users/Parijaat Gaur/source/repos/random shi/cmake_trial2/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/mnt/c/Users/Parijaat Gaur/source/repos/random shi/cmake_trial2/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named somename0
+# Convenience name for target.
+lib/CMakeFiles/somelib.dir/rule:
+	cd "/mnt/c/Users/Parijaat Gaur/source/repos/random shi/cmake_trial2/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/somelib.dir/rule
+.PHONY : lib/CMakeFiles/somelib.dir/rule
 
-# Build rule for target.
-somename0: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 somename0
-.PHONY : somename0
-
-# fast build rule for target.
-somename0/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/somename0.dir/build.make CMakeFiles/somename0.dir/build
-.PHONY : somename0/fast
-
-#=============================================================================
-# Target rules for targets named somelib
-
-# Build rule for target.
-somelib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 somelib
+# Convenience name for target.
+somelib: lib/CMakeFiles/somelib.dir/rule
 .PHONY : somelib
 
 # fast build rule for target.
 somelib/fast:
-	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/somelib.dir/build.make lib/CMakeFiles/somelib.dir/build
+	cd "/mnt/c/Users/Parijaat Gaur/source/repos/random shi/cmake_trial2/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/somelib.dir/build.make lib/CMakeFiles/somelib.dir/build
 .PHONY : somelib/fast
 
-bruhtest.o: bruhtest.cpp.o
-.PHONY : bruhtest.o
+bruh.o: bruh.cpp.o
+.PHONY : bruh.o
 
 # target to build an object file
-bruhtest.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/somename0.dir/build.make CMakeFiles/somename0.dir/bruhtest.cpp.o
-.PHONY : bruhtest.cpp.o
+bruh.cpp.o:
+	cd "/mnt/c/Users/Parijaat Gaur/source/repos/random shi/cmake_trial2/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/somelib.dir/build.make lib/CMakeFiles/somelib.dir/bruh.cpp.o
+.PHONY : bruh.cpp.o
 
-bruhtest.i: bruhtest.cpp.i
-.PHONY : bruhtest.i
+bruh.i: bruh.cpp.i
+.PHONY : bruh.i
 
 # target to preprocess a source file
-bruhtest.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/somename0.dir/build.make CMakeFiles/somename0.dir/bruhtest.cpp.i
-.PHONY : bruhtest.cpp.i
+bruh.cpp.i:
+	cd "/mnt/c/Users/Parijaat Gaur/source/repos/random shi/cmake_trial2/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/somelib.dir/build.make lib/CMakeFiles/somelib.dir/bruh.cpp.i
+.PHONY : bruh.cpp.i
 
-bruhtest.s: bruhtest.cpp.s
-.PHONY : bruhtest.s
+bruh.s: bruh.cpp.s
+.PHONY : bruh.s
 
 # target to generate assembly for a file
-bruhtest.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/somename0.dir/build.make CMakeFiles/somename0.dir/bruhtest.cpp.s
-.PHONY : bruhtest.cpp.s
+bruh.cpp.s:
+	cd "/mnt/c/Users/Parijaat Gaur/source/repos/random shi/cmake_trial2/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/somelib.dir/build.make lib/CMakeFiles/somelib.dir/bruh.cpp.s
+.PHONY : bruh.cpp.s
 
 # Help Target
 help:
@@ -175,10 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... somelib"
-	@echo "... somename0"
-	@echo "... bruhtest.o"
-	@echo "... bruhtest.i"
-	@echo "... bruhtest.s"
+	@echo "... bruh.o"
+	@echo "... bruh.i"
+	@echo "... bruh.s"
 .PHONY : help
 
 
@@ -190,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/mnt/c/Users/Parijaat Gaur/source/repos/random shi/cmake_trial2/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

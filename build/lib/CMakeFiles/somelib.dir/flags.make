@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/mnt/c/Users/Parijaat Gaur/source/repos/random shi/cmake_trial2/lib"
+CXX_INCLUDES = 
 
 CXX_FLAGS = -std=c++20
 

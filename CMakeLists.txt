@@ -7,6 +7,8 @@ set(CMAKE_CXX_EXTENSIONS NO) # for maximum portability
 
 add_executable(${PROJECT_NAME} bruhtest.cpp)
 
-add_library(somelib STATIC bruh.cpp)
+# add_library(somelib STATIC bruh.cpp)
 
 target_link_libraries(${PROJECT_NAME} somelib)
+
+add_subdirectory(lib)
